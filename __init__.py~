@@ -1,0 +1,7 @@
+from flask import Flask
+app = Flask(__name__)
+from app import views
+import sqlite3
+conn=sqlite3.connect('/home/nidhin/Documents/Networking/flask/microblog/database.db')
+c=conn.cursor()
+

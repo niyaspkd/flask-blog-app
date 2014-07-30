@@ -1,0 +1,79 @@
+
+{% block body %}
+<HEAD>
+ <TITLE> <b>blog login</b> </TITLE>
+ 
+
+<lin rel ='stylesheet' href="stylesheet/main.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+ </HEAD>     
+
+ <body style="background-color:yellow;">
+ <!-- Wrap all page content here -->
+<div id="wrap">
+  
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-inverse" data-spy="affix" data-offset-top="60" data-offset-bottom="70" id="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">blog</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/main">home</a></li>
+          
+          <li><a href="/post">post</a></li>
+          <li><a href="/logout">logout</a></li>
+         
+
+            </ul>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+  
+  
+<form id='login' action='login' method='post' accept-charset='UTF-8'>
+<fieldset >
+<legend>Login</legend>
+<input type='hidden' name='submitted' id='submitted' value='1'/>
+
+<label for='username' >UserName*:</label>
+<input type='text' name='username' id='username'  maxlength="50" />
+
+<label for='password' >Password*:</label>
+<input type='password' name='password' id='password' maxlength="50" />
+
+<input type='submit' name='Submit' value='Submit' />
+
+</fieldset>
+</form>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+ </BODY>
+
+ </HTML>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
+

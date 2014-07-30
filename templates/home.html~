@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="jumbo">
+    <h2>Welcome to Blog It<h2>
+    <h3>Best place to share your ideas !!!<h3>
+  </div>
+    {% for post in posts %}
+    <p>{{post.author.nickname}} says: <b>{{post.body}}</b></p>
+{% endblock %}
